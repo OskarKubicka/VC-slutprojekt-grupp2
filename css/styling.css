@@ -56,7 +56,7 @@
 #hidden-questionmark-div {
     display: none;
     position: absolute;
-    right: 100px;
+    right: 10px;
     bottom: 10px;
     font-size: xx-large;
     color: rgba(224, 109, 167, 0.8);
