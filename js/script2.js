@@ -82,5 +82,21 @@ onValue(ref(db, '/'), (snapshot) => {
 //   console.log('thomas removed');
 // }));
 
+const popupBtn = document.querySelector('#popup-button');
+const popupDiv = document.querySelector('#popup');
+const hiddenQuestionmarkDiv = document.querySelector('#hidden-questionmark-div');
+const hiddenQuestionmark = document.querySelector('#hidden-questionmark');
 
+popupBtn.addEventListener('click', function () {
+  popupDiv.style.visibility = "hidden";
+  hiddenQuestionmarkDiv.style.display = "block";
+  hiddenQuestionmarkDiv.style.right = "50px";
+  hiddenQuestionmarkDiv.style.bottom = "30px";
+
+  hiddenQuestionmark.addEventListener('click', function(){
+    hiddenQuestionmarkDiv.style.display = "none";
+    popupDiv.style.visibility = "visible";
+  })
+
+})
 
